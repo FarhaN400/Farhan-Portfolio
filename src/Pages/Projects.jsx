@@ -1,13 +1,13 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
-import toDo from "../assets/toDo.png";
+import ToDo from "../assets/ToDo.png";
 import weather from "../assets/weather.png";
 import password from "../assets/Password.png";
 
 const Projects = () => {
   const projects = [
     {
-      image: toDo,
+      image: ToDo,
       title: "ToDo App",
       type: "Frontend",
       description: "Remove image backgrounds using React + Express + AI API.",
