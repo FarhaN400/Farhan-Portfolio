@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
-import ToDo from "../assets/ToDo.png";
+import ToDo from "../assets/Todo.png";
 import weather from "../assets/weather.png";
 import password from "../assets/Password.png";
 
