@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
-import ToDo from "../assets/Todo.png";
+import ToDo from "../assets/todo.png";
 import weather from "../assets/weather.png";
-import password from "../assets/Password.png";
+import password from "../assets/password.png";
 
 const Projects = () => {
   const projects = [
