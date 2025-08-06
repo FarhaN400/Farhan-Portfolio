@@ -46,8 +46,8 @@ const Contact = () => {
       });
   };
   return (
-    <div className="bg-[#0e162a] p-5  flex justify-center ">
-      <div className="px-4 sm:px-10 md:px-10 lg:px-40 py-10 text-white md:w-1/2">
+    <div id="contact" className="bg-[#0e162a] p-5  flex justify-center ">
+      <div className="px-4 sm:px-10 md:px-10 lg:px-40 py-10 text-white md:w-1/2 mb-40">
         <h1 className="text-center text-4xl md:text-5xl font-semibold text-white mb-8">
           Contact
         </h1>

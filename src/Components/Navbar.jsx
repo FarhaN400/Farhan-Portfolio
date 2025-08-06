@@ -1,5 +1,6 @@
 import React from "react";
 import { IoMailOutline } from "react-icons/io5";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -7,15 +8,87 @@ const Navbar = () => {
       <header>
         <div className="text-white flex  justify-evenly items-center bg-[#1c293c] p-2   shadow-2xl text-xl  fixed top-0 left-0 w-full z-50">
           <div>
-            <h1>Azlan Jamshed</h1>
+            <h1>
+              <Link
+                to="home"
+                smooth={true}
+                duration={300}
+                spy={true}
+                offset={-70}
+                className="cursor-pointer"
+              >
+                Azlan Jamshed{" "}
+              </Link>
+            </h1>
           </div>
           <div className="hidden md:block">
-            <ul className="flex gap-10">
-              <l1>Home</l1>
-              <l1>About</l1>
-              <l1>Skills</l1>
-              <l1>Project</l1>
-              <l1>Contact Me</l1>
+            <ul className="flex gap-10 text-base">
+              <l1>
+                {/* <a href="#home">Home</a> */}
+                <Link
+                  to="home"
+                  smooth={true}
+                  duration={300}
+                  spy={true}
+                  offset={-70}
+                  activeClass="text-blue-500"
+                  className="cursor-pointer hover:text-blue-400 "
+                >
+                  Home
+                </Link>
+              </l1>
+              <l1>
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={300}
+                  spy={true}
+                  offset={-70}
+                  activeClass="text-blue-500"
+                  className="cursor-pointer hover:text-blue-400"
+                >
+                  About
+                </Link>
+              </l1>
+              <l1>
+                <Link
+                  to="skill"
+                  smooth={true}
+                  duration={300}
+                  spy={true}
+                  offset={-70}
+                  activeClass="text-blue-500"
+                  className="cursor-pointer hover:text-blue-400"
+                >
+                  Skills
+                </Link>
+              </l1>
+              <l1>
+                <Link
+                  to="project"
+                  smooth={true}
+                  duration={300}
+                  spy={true}
+                  offset={-70}
+                  activeClass="text-blue-500"
+                  className="cursor-pointer hover:text-blue-400"
+                >
+                  Projects
+                </Link>
+              </l1>
+              <l1>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={300}
+                  spy={true}
+                  offset={-70}
+                  activeClass="text-blue-500"
+                  className="cursor-pointer hover:text-blue-400"
+                >
+                  Contact Me
+                </Link>
+              </l1>
             </ul>
           </div>
           {/* <div className="bg-blue-600 p-2 rounded-xl items-center ">

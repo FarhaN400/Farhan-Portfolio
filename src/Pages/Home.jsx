@@ -3,25 +3,26 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
 import { IoMailOutline } from "react-icons/io5";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <>
-      <div className="bg-[#0e162a] pt-30 p-10 md:pt-40 ">
+      <div id="home" className="bg-[#0e162a] pt-30 p-10 md:pt-40 ">
         <div className="flex flex-col  md:flex-row-reverse md:justify-between justify-center items-center gap-10 md:px-[15%]   ">
           <div className="w-[200px] h-[200px] border-2 border-red-700 "></div>
           <div className="flexflex-col justify-center items-center  gap-5 text-white">
             <div className="flex items-center justify-center md:justify-start gap-4 mb-8">
-              <div className="flex items-center justify-center    w-12 h-12 rounded-md  bg-blue-500 text-white px-8 py-3  font-medium transition-all hover:bg-blue-600 hover:scale-105  ">
-                <a href="">
-                  <FaGithub className="w-6 h-6" />
-                </a>
-              </div>
-              <div className=" flex items-center justify-center      w-12 h-12 rounded-md  bg-blue-500 text-white px-8 py-3 font-medium transition-all hover:bg-blue-600 hover:scale-105 ">
-                <a href="">
-                  <FaXTwitter className="w-6 h-6" />
-                </a>
-              </div>
+              <a href="https://github.com/azlanjamshed" target="_blank">
+                <div className="flex items-center justify-center    w-12 h-12 rounded-md  bg-blue-500 text-white px-8 py-3  font-medium transition-all hover:bg-blue-600 hover:scale-105  ">
+                  <FaGithub className="w-6 h-6 absolute" />
+                </div>
+              </a>
+              <a href="https://x.com/Azlan_Jamshed" target="_blank">
+                <div className=" flex items-center justify-center      w-12 h-12 rounded-md  bg-blue-500 text-white px-8 py-3 font-medium transition-all hover:bg-blue-600 hover:scale-105 ">
+                  <FaXTwitter className="w-6 h-6 absolute" />
+                </div>
+              </a>
             </div>
             <div className="flex flex-col items-center justify-center md:items-start">
               <h1 className="text-3xl md:text-5xl font-semibold text-white mb-2 ">
@@ -32,12 +33,16 @@ const Home = () => {
               </h3>
             </div>
             <div className=" flex items-center justify-center md:justify-start">
-              <a
-                href=""
-                className="inline-flex items-center justify-center bg-blue-500 text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-blue-600 hover:scale-105"
+              <Link
+                to="contact"
+                smooth={true}
+                duration={300}
+                spy={true}
+                offset={-70}
+                className="cursor-pointer inline-flex items-center justify-center bg-blue-500 text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-blue-600 hover:scale-105"
               >
                 Contact Me <IoMailOutline className=" ml-3 w-5 h-5 inline" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

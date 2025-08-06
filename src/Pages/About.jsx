@@ -1,3 +1,4 @@
+import CV from "../assets/AzlanJamshed.pdf";
 const About = () => {
   return (
     <>
@@ -31,7 +32,8 @@ const About = () => {
             <div className="flex justify-center lg:justify-start">
               <a
                 className="inline-flex items-center bg-blue-500 text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-blue-600 hover:scale-105"
-                href=""
+                href={CV}
+                download
               >
                 Download CV
                 <svg

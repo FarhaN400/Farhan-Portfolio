@@ -36,7 +36,7 @@ const Projects = () => {
   ];
   return (
     <>
-      <div className="bg-slate-800 p-10">
+      <div id="project" className="bg-slate-800 p-10">
         <div className="container mx-auto px-4 max-w-6xl text-center mb-5">
           <h2 className="text-center text-4xl md:text-5xl font-semibold text-white mb-2">
             Projects
