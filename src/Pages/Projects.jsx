@@ -1,37 +1,17 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
-import ToDo from "../assets/todo.png";
-import weather from "../assets/weather.png";
-import password from "../assets/password.png";
 
 const Projects = () => {
   const projects = [
     {
-      image: ToDo,
-      title: "ToDo App",
+      image: "src/assets/boooks.jpg",
+      title: "Book Manager",
       type: "Frontend",
-      description: "Remove image backgrounds using React + Express + AI API.",
-      techStack: ["React", "Tailwind CSS", "Local Storage"],
-      link: "https://todo-aj.netlify.app",
-      gitLink: "https://github.com/azlanjamshed/To-Do",
-    },
-    {
-      image: weather,
-      title: "Weather App",
-      type: "Frontend",
-      description: "Mini blogging platform with CRUD, API, and form handling.",
-      techStack: ["HTML", "CSS", "JavaScript", "Weather API"],
-      link: "https://weatherapp-aj.netlify.app",
-      gitLink: "https://github.com/azlanjamshed/Weather-App",
-    },
-    {
-      image: password,
-      title: "Password Generator ",
-      type: "Frontend",
-      description: "Personal portfolio using React, Tailwind, and ShadCN UI.",
-      techStack: ["React", "Tailwind CSS"],
-      link: "https://passowrd-generator-aj.netlify.app",
-      gitLink: "https://github.com/azlanjamshed/Password-Generator",
+      description:
+        "A simple and intuitive app to manage books, display author information, and view detailed descriptions. Users can browse through a collection of books, check author profiles, and explore book details in a clean and responsive interface.",
+      techStack: ["Flutter"],
+      // link: "https://todo-aj.netlify.app",
+      gitLink: "https://github.com/FarhaN400/Book_Manager",
     },
   ];
   return (

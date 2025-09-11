@@ -1,4 +1,4 @@
-import CV from "../assets/AzlanJamshed.pdf";
+import CV from "../assets/Farhan_Resume.pdf";
 const About = () => {
   return (
     <>
@@ -23,11 +23,11 @@ const About = () => {
           </div>
           <div className="text-center lg:text-left">
             <p className="text-gray-600 dark:text-gray-300 mb-8 leading-7 max-w-2xl mx-auto lg:mx-0">
-              Experienced Backend developer with over 5 years of professional
-              experience in web development. Proficient in creating efficient
-              backend systems and skilled in frontend development using React
-              and Next.js. Certified AWS Developer Associate with a strong
-              dedication to delivering high-quality software solutions.
+              I am a Machine Learning Engineer with expertise in building models
+              that enhance user engagement and improve productivity on web and
+              mobile applications. I specialize in developing intelligent
+              solutions, from recommendation systems to predictive models, and
+              enjoy turning data into impactful, real-world applications.
             </p>
             <div className="flex justify-center lg:justify-start">
               <a

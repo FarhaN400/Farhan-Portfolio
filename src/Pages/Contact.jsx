@@ -46,11 +46,15 @@ const Contact = () => {
       });
   };
   return (
-    <div id="contact" className="bg-[#0e162a] p-5  flex justify-center ">
-      <div className="px-4 sm:px-10 md:px-10 lg:px-40 py-10 text-white md:w-1/2 mb-40">
-        <h1 className="text-center text-4xl md:text-5xl font-semibold text-white mb-8">
+    <div
+      id="contact"
+      className="bg-[#0e162a] px-4 sm:px-6 md:px-10 lg:px-20 py-16 flex justify-center"
+    >
+      <div className="w-full max-w-3xl text-white">
+        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-semibold mb-10">
           Contact
         </h1>
+
         {isSending ? (
           <div className="text-center text-white p-6">
             <h2 className="text-2xl font-bold mb-2">
@@ -61,7 +65,7 @@ const Contact = () => {
         ) : (
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="bg-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col gap-6 sm:gap-8 hover:shadow-xl transition-shadow duration-300"
+            className="bg-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col gap-6 hover:shadow-xl transition-shadow duration-300"
           >
             {/* Name Field */}
             <div className="flex flex-col gap-2">
@@ -74,7 +78,6 @@ const Contact = () => {
               <input
                 id="name"
                 type="text"
-                //   placeholder="Your Name"
                 className="w-full p-3 rounded-md border border-slate-700 bg-slate-900 text-white focus:outline-none focus:border-blue-500"
                 {...register("name", { required: true })}
               />
@@ -84,32 +87,17 @@ const Contact = () => {
             <div className="flex flex-col gap-2">
               <label
                 className="text-sm sm:text-base font-medium"
-                htmlFor="mobile"
+                htmlFor="email"
               >
                 Email
               </label>
               <input
                 id="email"
                 type="email"
-                //   placeholder="123@abc"
                 className="w-full p-3 rounded-md border border-slate-700 bg-slate-900 text-white focus:outline-none focus:border-blue-500"
                 {...register("email", { required: true })}
               />
             </div>
-
-            {/* Email Field
-          <div className="flex flex-col gap-2">
-            <label className="text-sm sm:text-base font-medium" htmlFor="email">
-              Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Your Email"
-              className="w-full p-3 rounded-md border border-slate-700 bg-slate-900 text-white focus:outline-none focus:border-blue-500"
-              {...register("email", { required: true })}
-            />
-          </div> */}
 
             {/* Message Field */}
             <div className="flex flex-col gap-2">
@@ -121,7 +109,7 @@ const Contact = () => {
               </label>
               <textarea
                 id="message"
-                className="w-full p-3 rounded-md border border-slate-700 bg-slate-900 text-white focus:outline-none focus:border-blue-500 min-h-[100px] sm:min-h-[150px]"
+                className="w-full p-3 rounded-md border border-slate-700 bg-slate-900 text-white focus:outline-none focus:border-blue-500 min-h-[120px] sm:min-h-[150px]"
                 {...register("message", { required: true })}
               />
             </div>
@@ -130,7 +118,7 @@ const Contact = () => {
             <div className="w-full flex justify-center">
               <button
                 type="submit"
-                className="w-1/2 p-3  bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300 font-semibold flex justify-center items-center gap-3"
+                className="w-full sm:w-1/2 p-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300 font-semibold flex justify-center items-center gap-3"
                 disabled={isSending}
               >
                 {isSending ? (

@@ -1,6 +1,8 @@
 import React from "react";
 import { IoMailOutline } from "react-icons/io5";
 import { Link } from "react-scroll";
+import CV from "../assets/Farhan_Resume.pdf";
+import { TbFileCv } from "react-icons/tb";
 
 const Navbar = () => {
   return (
@@ -15,9 +17,9 @@ const Navbar = () => {
                 duration={300}
                 spy={true}
                 offset={-70}
-                className="cursor-pointer"
+                className="cursor-pointer font-semibold text-4xl "
               >
-                Azlan Jamshed{" "}
+                Farhan Akhtar{" "}
               </Link>
             </h1>
           </div>
@@ -95,12 +97,13 @@ const Navbar = () => {
             <span> Contact Me</span>
             <IoMailOutline className=" ml-3 w-7 h-7 inline" />
           </div> */}
-          <div className=" flex items-center justify-center md:justify-start">
+          <div className=" md:hidden flex items-center justify-center md:justify-start">
             <a
-              href=""
-              className="items-center bg-blue-500 text-white px-3 py-2 rounded-lg   transition-all hover:bg-blue-600 hover:scale-105"
+              className="items-center bg-blue-500 text-white px-2 py-1 rounded-lg   transition-all hover:bg-blue-600 hover:scale-105"
+              href={CV}
+              download
             >
-              <IoMailOutline className=" w-5 h-5 inline" />
+              <TbFileCv className=" w-7 h-7 inline" />
             </a>
           </div>
         </div>

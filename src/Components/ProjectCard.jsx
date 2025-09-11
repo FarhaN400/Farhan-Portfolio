@@ -26,11 +26,11 @@ const ProjectCard = ({
   return (
     <div className="flex flex-col justify-center  items-center  lg:flex-row bg-white dark:bg-gray-900 rounded-lg shadow-md overflow-hidden transition-all duration-300 max-w-5xl mx-auto my-6 p-5">
       {/* Project Image */}
-      <div className="lg:w-1/2 w-full p-5  ">
+      <div className="lg:w-1/2 w-full h-[400px] p-5  ">
         <img
-          src={image} // 🔁 replace with actual image path
+          src={image}
           alt="Project Screenshot"
-          className="w-full h-full object-cover rounded"
+          className="w-full h-full object-contain rounded"
         />
       </div>
 
@@ -62,14 +62,14 @@ const ProjectCard = ({
 
         {/* Link */}
         <div className="flex  gap-5">
-          <a
+          {/* <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-500 text-white px-4 py-2 rounded transition-all hover:bg-blue-600 hover:scale-105 w-fit text-sm sm:text-base"
           >
             View Project
-          </a>
+          </a> */}
           <div className="bg-blue-500 py-2 px-2 rounded transition-all hover:bg-blue-600 hover:scale-105 w-fit">
             <a href={gitLink} target="_blank" rel="noopener noreferrer">
               <FaGithub className="w-6 h-6  " />
