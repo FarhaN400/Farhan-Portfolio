@@ -13,6 +13,16 @@ const Projects = () => {
       // link: "https://todo-aj.netlify.app",
       gitLink: "https://github.com/FarhaN400/Book_Manager",
     },
+    {
+      image: "src/assets/Daily_Exercise.jpeg",
+      title: "Daily Exercise",
+      type: "Frontend",
+      description:
+        "ts design focuses on making health and wellness feel accessible and encouraging, with clear sections for different activities like Yoga, Meditation, and Diet Recommendations. It’s a great example of a modern, user-friendly mobile application interface.",
+      techStack: ["Flutter"],
+      // link: "https://todo-aj.netlify.app",
+      gitLink: "https://github.com/FarhaN400/Exersice_App",
+    },
   ];
   return (
     <>

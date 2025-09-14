@@ -15,10 +15,10 @@ const Contact = () => {
     setIsSending(true);
     emailjs
       .send(
-        "service_m293owo", // replace with your service ID
-        "template_obcjbra", // replace with your template ID
+        "service_9eiwpfy", // replace with your service ID
+        "template_pd7o15o", // replace with your template ID
         data,
-        "AtQ6phyvkVydr7e_N" // replace with your public key
+        "Ch-_OAu_NkR98bkDC" // replace with your public key
       )
       .then(
         (result) => {
