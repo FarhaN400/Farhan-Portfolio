@@ -4,7 +4,7 @@ import ProjectCard from "../Components/ProjectCard";
 const Projects = () => {
   const projects = [
     {
-      image: "src/assets/boooks.jpg",
+      image: "https://res.cloudinary.com/dbfsqbsoc/image/upload/v1757955395/boooks_g2pa6d.jpg",
       title: "Book Manager",
       type: "Frontend",
       description:
@@ -14,7 +14,7 @@ const Projects = () => {
       gitLink: "https://github.com/FarhaN400/Book_Manager",
     },
     {
-      image: "src/assets/Daily_Exercise.jpeg",
+      image: "https://res.cloudinary.com/dbfsqbsoc/image/upload/v1757955395/Daily_Exercise_uhiane.jpg",
       title: "Daily Exercise",
       type: "Frontend",
       description:
